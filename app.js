@@ -106,7 +106,7 @@ module.exports = function(callback) {
     });
 
     // async set call (promise)
-    myContract.methods.setApprovalFlag(false).send({from: '0x627306090abaB3A6e1400e9345bC60c78a8BEf57'}, function (err, res) {
+    myContract.methods.setApprovalFlag(true).send({from: '0x627306090abaB3A6e1400e9345bC60c78a8BEf57'}, function (err, res) {
         if (err) {
             console.log('oh no...'+err.message);
         } else {
